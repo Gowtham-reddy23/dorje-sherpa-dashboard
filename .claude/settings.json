@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Bash(cat .env*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(vercel deploy*)",
+      "Bash(vercel env add*)",
+      "Bash(vercel env rm*)",
+      "Bash(git commit*)"
+    ]
+  }
+}
